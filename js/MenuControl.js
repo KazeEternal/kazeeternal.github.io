@@ -6,7 +6,6 @@ function Display(target, source)
     {
         if(client.readyState == 3) 
         {
-            alert(client.statusText);
         }
         else if(client.readyState = 4)
         {
