@@ -4,15 +4,15 @@
         <link rel="stylesheet" href="css/MenuBar.css" />
         <script src="js/MenuControl.js"></script>
     </head>
-    <body>
-        <div class="topnav">
-            <a class="active" href="#home" onclick="Display('DisplayArea', 'home')">Home</a>
-            <a href="#career" onclick="Display('DisplayArea', 'career')">Career</a>
-            <a href="#projects" onclick="Display('DisplayArea', 'projects')">Projects</a>
-            <a href="#about" onclick="Display('DisplayArea', 'about')">About Me</a>
-            <a href="#gaming" onclick="Display('DisplayArea', 'gaming')">Gaming</a>
-            <a href="#hobbies" onclick="Display('DisplayArea', 'hobbies')">Hobbies</a>
-            <a href="#contact" onclick="Display('DisplayArea', 'contact')">Contact</a>
+    <body onload="Display('DisplayArea', 'home')">
+        <div class="topnav" id="navbar">
+            <a href="#home"     onclick="Display('DisplayArea', 'home',     SwitchHeader, this)" class="active">Home</a>
+            <a href="#career"   onclick="Display('DisplayArea', 'career',   SwitchHeader, this)">Career</a>
+            <a href="#projects" onclick="Display('DisplayArea', 'projects', SwitchHeader, this)">Projects</a>
+            <a href="#about"    onclick="Display('DisplayArea', 'about',    SwitchHeader, this)">About Me</a>
+            <a href="#gaming"   onclick="Display('DisplayArea', 'gaming',   SwitchHeader, this)">Gaming</a>
+            <a href="#hobbies"  onclick="Display('DisplayArea', 'hobbies',  SwitchHeader, this)">Hobbies</a>
+            <a href="#contact"  onclick="Display('DisplayArea', 'contact',  SwitchHeader, this)">Contact</a>
         </div>
 
         <div style="padding-left:16px" id="DisplayArea">
